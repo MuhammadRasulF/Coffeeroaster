@@ -398,13 +398,13 @@ html {
     margin-right: 95px;
 }
 
-.how-works__item--img {
+.how-works__item-img {
     margin: 0;
     padding: 0;
     margin-bottom: 67px;
 }
 
-.how-works__item--number {
+.how-works__item-number {
     margin: 0;
     padding: 0;
     margin-bottom: 38px;
@@ -416,7 +416,7 @@ html {
     color: #FDD6BA;
 }
 
-.how-works__item--heading {
+.how-works__item-heading {
     width: 200px;
     margin: 0;
     padding: 0;
@@ -429,7 +429,7 @@ html {
     color: #333D4B;
 }
 
-.how-works__item--desc {
+.how-works__item-desc {
     margin: 0;
     padding: 0;
     color: #333D4B;
