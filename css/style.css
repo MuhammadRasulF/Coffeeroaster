@@ -446,19 +446,17 @@ html {
 
 /* FOOTER */
 
-.site-footer {
-    display: block;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    margin-bottom: 88px;
-    background-color: #2C343E;
-    border-radius: 10px;
-}
 
 .site-footer__container {
    display: flex;
    justify-content: start;
    align-items: center;
+   padding-top: 48px;
+   padding-bottom: 48px;
+   padding-left: 86px;
+   padding-right: 48px;
+   background-color: #2C343E;
+   border-radius: 10px;
 }
 
 .site-footer__logo-link {
