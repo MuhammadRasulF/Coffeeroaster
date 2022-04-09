@@ -137,6 +137,10 @@ html {
     text-decoration: underline;
 }
 
+.site-header__button {
+    display: none;
+}
+
 /* SITE-MAIN */
 
 /* FIRST-SECTION */
@@ -214,7 +218,7 @@ html {
 .collection__heading {
     position: absolute;
     z-index: -1;
-    bottom: 365px;
+    bottom: 380px;
     padding: 0;
     margin: 0;
     font-family: 'Fraunces';
@@ -234,13 +238,11 @@ html {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-right: -30px;
 }
 
 .collection__item {
     width: 256px;
-}
-
-.collection__item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -533,27 +535,65 @@ html {
 }
 
 @media only screen and (max-width: 550px) {
-    .site-header__container {
-        flex-direction: column;
-        text-align: center;
+    .site-header__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .site-header__logo-link {
+        width: 162px;
+    }
+
+    .site-header__name {
+        font-family: 'Fraunces';
+        color: #333D4B;
+        margin:0;
+        padding: 0;
+        font-size: 18px;
+        Line-height: 18px;
     }
 
     .site-header__nav {
-        margin-top: 20px;
+        display: none;
     }
 
-    .site-header__list {
-        flex-direction: column;
+    .site-header__button {
+        display:block;
+    }
+
+    .collection__heading {
+        top: -90px;;
+        width: 286px;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 72px;
         text-align: center;
+        color: #83888F;
+        background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+    }
+}
+
+@media only screen and (max-width: 500px) {  
+    .hero-section {
+        width: 327px;
     }
 
     .hero-section {
-        width: 327px;
+        background-image: url(../img/Bitmap-phone.jpg);
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.600551);    
+        background-position: calc(50% - 100px) ;
     }
 
     .hero-section__container {
         flex-direction: column;
         text-align: center;
+        margin-right: auto;
+        margin-left: 0;
     }
 
     .hero-section__heading {
@@ -578,6 +618,7 @@ html {
     }
 
     .collection__heading {
+        top: -90px;;
         width: 286px;
         font-family: 'Fraunces';
         font-style: normal;
@@ -588,13 +629,49 @@ html {
         color: #83888F;
         background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
     }
-
+    
+    .collection__container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+   
     .collection__list {
         flex-direction: column;
     }
 
     .collection__item {
-        width: 282px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 48px;
+    }
+
+    .collection__img {
+        width: 200px;
+        padding: 0;
+        margin:0;
+        margin-bottom: 24px;
+    }
+    
+    .collection__title {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 16px;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #333D4B;
+    }
+    
+    .collection__desc {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: #333D4B;
     }
 
 
