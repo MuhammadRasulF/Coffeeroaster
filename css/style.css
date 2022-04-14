@@ -156,6 +156,17 @@ html {
     padding-bottom: 94px;
 }
 
+@media /* only for retina displays */
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: url(../img/Bitmap@2x.jpg);
+    }
+}
 
 .hero-section__heading {
     width: 493px;
@@ -569,6 +580,18 @@ html {
         background-color: rgba(0, 0, 0, 0.600551);    
         background-position: calc(50%) ;
     }
+
+    @media /* only for retina displays */
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: url(../img/Group2x.png);
+        }
+    }    
 
     .hero-section__container {
         padding-right: -30px;
